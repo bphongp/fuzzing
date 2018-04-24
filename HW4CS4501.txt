@@ -1,0 +1,30 @@
+﻿Part 0
+        It looks like the program is opening the file and adding up the values of the string in the function.
+        If the remainder is a certain value, it copies the string to a buffer, which would cause an overflow in
+        some instances.
+        
+        The security bug looks like it is a buffer overflow. When it is writing data to the buffer, it overruns
+        the buffer's boundaries and overwrites adjacent memory locations
+        
+Part 1
+        A. Done - image
+        B. Done - image
+Part 2
+        All ran on a VM for 10 mins:
+                MOD_BASE = 10
+                        29.5K(16 UNIQUE)
+                MOD_BASE = 100
+                         3462(16 UNIQUE)
+                MOD_BASE = 200
+                        1864(16 UNIQUE)
+                MOD_BASE = 500
+                        2135(18 UNIQUE)
+                MOD_BASE = 1000        
+                        438(16 unique)
+        
+        As MOD_BASE increases, the number of crashes generally decreases. The only ones that 
+        do not follow this relationship is from 200 to 500. 
+Part 3
+        Done-image
+        This part had more crashes compared to the one rain in part 1A.
+Extra Credit:
